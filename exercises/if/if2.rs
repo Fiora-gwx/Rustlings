@@ -8,12 +8,14 @@
 // I AM NOT DONE
 
 pub fn foo_if_fizz(fizzish: &str) -> &str {
-    if fizzish == "fizz" {
-        "foo"
-    } else {
-        1
+    match fizzish {
+        "fizz" => "foo",
+        "fuzz" => "bar",
+        "literally anything" => "baz",
+        _ => fizzish,
     }
 }
+
 
 // No test changes needed!
 #[cfg(test)]
