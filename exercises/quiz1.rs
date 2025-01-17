@@ -32,10 +32,10 @@ fn verify_test() {
     assert_eq!(65, price4);
 }
 
-fn calculate_price_of_apples(quantity: u32) -> u32 {
-    if quantity > 40 {
-        quantity * 1
+fn calculate_price_of_apples(quantitys: u32) -> u32 {
+    if quantitys > 40 {
+        quantitys * 1
     } else {
-        quantity * 2
+        quantitys * 2
     }
 }
